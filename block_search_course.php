@@ -51,9 +51,10 @@ class block_search_course extends block_base {
         // Body of Block.
         $this->content = new stdClass;
         $this->content->text = '';
-        $this->content->text .= '<form action="' . $CFG->wwwroot . '/course/search.php">';
+        $this->content->text .= '<form action="' . $CFG->wwwroot . '/blocks/search_course/view.php">';
         $this->content->text .= '<input id="searchform_search" name="search" type="text" size="16" />';
         $this->content->text .= '<button id="searchform_button" type="submit" title="Search">' . $strgo . '</button><br />';
+        $this->content->text .= '<a href="' . $CFG->wwwroot . '/blocks/search_course/view.php" title="Search">Add Filters</button><br />';
         $this->content->text .= '</form>';
         return $this->content;
     }

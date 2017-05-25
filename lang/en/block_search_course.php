@@ -21,5 +21,15 @@
  * @copyright  3i Logic<lms@3ilogic.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL
  */
-$string['pluginname'] = 'Course Finder';
-$string['search_course'] = 'Course Finder';
+$string['pluginname']           = 'Course Finder';
+$string['search_course']        = 'Course Finder';
+$string['searchcourses']        = 'Course';
+$string['searchfromtime']       = 'Course start date';
+$string['searchtilltime']       = 'Course end date';
+$string['description']          = 'Search in course summary';
+$string['courseformat']         = 'Course format';
+$string['completioncriteria']   = 'Completion criteria';
+$string['sortby']               = 'Sort by';
+$string['search']               = 'Search';
+$string['filterresults']        = 'Search Filter';
+$string['sortheading']          = 'Sort Filter';
