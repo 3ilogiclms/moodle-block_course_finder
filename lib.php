@@ -66,7 +66,7 @@ function getCourses($courses) {
         $content .= '</div>';
     }
     if ($content == '') {
-        $content .= '<div class="msg msg-warning"> There is no courses exist with above filters. </div>';
+        $content .= '<div class="msg msg-warning"> No course(s) found. </div>'; // String changed.
     }
 
     return $content;
