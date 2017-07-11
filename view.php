@@ -62,6 +62,8 @@ if ($fromform = $form->get_data()) {
         $searchquery .= " AND format  = '" . $fromform->courseformat . "'";
     if ($fromform->completioncriteria >= 0 && isset($fromform->completioncriteria))
         $searchquery .= " AND enablecompletion  = " . $fromform->completioncriteria . "";
+    if ($fromform->hidden >= 0 && isset($fromform->hidden))
+        $searchquery .= " AND visible  = " . $fromform->hidden . "";
     if ($fromform->sortmenu != "")
         $searchquery .= " ORDER BY " . $fromform->sortmenu;
     $courses = $DB->get_records_sql($searchquery, null);
