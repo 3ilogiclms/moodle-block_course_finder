@@ -70,6 +70,12 @@ class course_search_form extends moodleform {
             '1' => 'Enable',
             '0' => 'Disable'
         ));
+        $mform->addElement('select', 'hidden', get_string('hidden','grades'), array(
+            '-1' => 'Not set',
+            '1' => 'Not Hidden',
+            '0' => get_string('hidden','grades')
+        ));
+
         $mform->addElement('header', 'sortresults', get_string('sortheading', 'block_search_course'));
         $mform->setExpanded('sortresults', false);
         $mform->addElement('select', 'sortmenu', get_string('sortby', 'block_search_course'), array(
